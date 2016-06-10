@@ -1,0 +1,235 @@
+@font-face {
+    font-family: Rockwell;
+	src: url(../fonts/rockwell-bold.eot);
+   }
+@font-face {
+    font-family: Raleway;
+	src: url(../fonts/raleway-semibold.eot);
+   }
+
+*{
+	margin: 0px auto;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Roboto Slab';
+}
+
+
+/*header begin*/
+.header{
+	z-index: 999;
+	width: 100%;
+	position: fixed; 
+	background-color: white;
+}
+
+.header .container{
+	width: 1170px;
+	margin: 0px auto;
+	padding: 0px 0px 0px 0px;
+}
+
+.logotype{
+	display: inline-block;
+	float: left;
+	margin: 50px 55px 50px 0px;
+}
+
+.header .logotype .logo_img{
+	float: left;
+	height: 33px;
+	width: 33px;
+	background: url("../img/logo.svg")center no-repeat;
+	background-size: contain;
+	margin: 10px 0 0 0;
+}
+
+.header .logotype .logo{
+	font-size: 30px;
+	padding: 10px 10px 10px 12px;
+	float: left;
+	text-decoration: none;
+	color: black;	
+	line-height: 30px;
+	font-weight: 500;
+	font-family: 'Rockwell';
+}
+
+.header .logo span{
+	font-weight: bold;
+}
+
+.header .nav{ 
+	padding: 0;
+	float: left;
+	display: inline-block;
+	text-transform: uppercase;
+	list-style: none;
+	font-size: 17px;
+	line-height: 30px;
+	font-family: 'Questrial', sans-serif;
+	font-weight: 500;
+	letter-spacing: -0.5px;
+	margin: 45px 10px 40px 0px;
+}
+
+.header .nav li{
+	float: left;
+	padding: 20px 5px 15px 35px;
+}
+
+.header .nav li:last-child{
+	padding: 20px 42px 15px 35px;
+}
+
+.header .nav a{
+	text-decoration: none;	
+	color: black;	
+	}
+
+.header .nav a:hover{
+	color: #FFD700;
+	.text-decoration: underline;
+}
+
+.container:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.container .contact{
+	float: right;
+	border-left: 1px solid rgb(235,235,235);
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 35px 0px 20px 0px;
+	font-family: 'Montserrat', sans-serif;
+	}
+
+.contact_help{
+	content: '';
+	display: block;
+	clear: both; 
+	width: auto;
+}
+
+.btn-number{
+	margin: 0;
+	clear: both;
+	display: inline-block;
+}
+
+.btn_chat{
+	float: left;
+	margin: 10px 0px 10px 5px;
+	padding: 0px 23px 0px 0px;
+	border-right: 1px solid rgb(186,187,196);
+	}
+
+.ph_number{
+	float: right;
+	margin: 20px 0 20px 0px;
+}
+
+.header .contact p{
+	font-size: 12px;
+	line-height: 20px;
+	padding: 0px 0px 0px 8px;
+	font-weight: 700;	
+	letter-spacing: -0.4px;
+	margin: 0px 0px 10px 39px;
+}
+
+.header .btn{
+	margin: 0px 0px 6px 45px;
+	padding: 12px 28px;
+	font-size: 14px;
+	text-decoration: none;
+	color: black;
+	line-height: 40px;
+	font-weight: 600;
+}
+
+.btn.btn-default{
+	background-color: rgb(255,225,62);
+}
+
+.btn.btn-default:hover{
+	transition: all .8s ease;
+	background-color: #FFFF00;
+	color: #CD950C;
+}
+
+.header .ph_number .phone_number{
+	float: right;
+	font-family: 'Rockwell';
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	line-height: 20px;
+	padding: 0px 0px 0px 15px;
+	}
+
+/*header end*/
+
+/*first_screen begin*/
+.screen.__main_login{
+	top: 150px;
+	padding: 0;
+	height:calc(124vh - 150px);
+	background: url(../img/background_main.jpg)no-repeat;
+	background-size: cover;
+	position: relative;
+	.width: 1170px;
+}
+
+.dimming{
+	position: absolute;
+	z-index: 1;
+	background: rgba(0,0,0,.3);
+	top: 0;
+	right: 0;	
+	bottom: 0;
+	left: 0;  
+}
+
+.screen.__main_login .container{
+	min-height: 600px;
+	max-height: 800px;
+	top: 220px;
+	position: relative;
+}
+
+.screen.__main_login .container h1{
+	font-size: 45px;
+	color: white;
+	text-align: center;
+	padding: 0;
+	font-family: 'Rockwell';
+	font-weight: lighter;
+	letter-spacing: 1px;
+	
+}
+
+.screen.__main_login .container p{
+	margin: 30px 0;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2px;
+}
+
+.container .screen1-shape{
+	.display: block;
+	background: url("../img/shape.png") center contain;; 
+	height: 200px;
+	width: 200px;
+}
