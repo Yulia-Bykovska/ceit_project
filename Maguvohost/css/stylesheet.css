@@ -8,34 +8,36 @@
    }
 
 *{
-	margin: 0px auto;
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
-
-
 body{
 	font-family: 'Roboto Slab';
+	padding: 147px 0 0 0;
 }
-
-
+.container{
+	margin: 0 auto;
+	width: 1170px;
+}
+.contact_help:after,
+.container:after{
+	content: '';
+	display: block;
+	clear: both;
+}
 /*header begin*/
 .header{
 	z-index: 999;
-	width: 100%;
 	position: fixed; 
-	background-color: white;
+	top: 0; 
+	width: 100%;
+	background: #FFF;
 }
-
-.header .container{
-	width: 1170px;
-	margin: 0px auto;
-	padding: 0px 0px 0px 0px;
-}
-
 .logotype{
 	display: inline-block;
 	float: left;
-	margin: 50px 55px 50px 0px;
+	margin: 48px 55px 49px 0px;
 }
 
 .header .logotype .logo_img{
@@ -69,52 +71,40 @@ body{
 	text-transform: uppercase;
 	list-style: none;
 	font-size: 17px;
-	line-height: 30px;
+	line-height: 17px;
 	font-family: 'Questrial', sans-serif;
 	font-weight: 500;
 	letter-spacing: -0.5px;
-	margin: 45px 10px 40px 0px;
+	margin: 50px 0px 45px 0px;
+
 }
 
 .header .nav li{
 	float: left;
-	padding: 20px 5px 15px 35px;
+	padding: 20px 0px 15px 40px;
 }
 
 .header .nav li:last-child{
-	padding: 20px 42px 15px 35px;
+	padding-right:0;
 }
 
 .header .nav a{
 	text-decoration: none;	
 	color: black;	
-	}
+}
 
 .header .nav a:hover{
 	color: #FFD700;
 	.text-decoration: underline;
 }
 
-.container:after{
-	content:'';
-	display:block;
-	clear:both;
-}
 
-.container .contact{
+.header .container .contact{
 	float: right;
 	border-left: 1px solid rgb(235,235,235);
-	float: left;
 	margin: 0px 0px 0px 0px;
-	padding: 35px 0px 20px 0px;
-	font-family: 'Montserrat', sans-serif;
-	}
-
-.contact_help{
-	content: '';
-	display: block;
-	clear: both; 
-	width: auto;
+	padding: 35px 0px 17px 0px;
+	font-family: 'Montserrat';
 }
 
 .btn-number{
@@ -128,7 +118,7 @@ body{
 	margin: 10px 0px 10px 5px;
 	padding: 0px 23px 0px 0px;
 	border-right: 1px solid rgb(186,187,196);
-	}
+}
 
 .ph_number{
 	float: right;
@@ -137,20 +127,20 @@ body{
 
 .header .contact p{
 	font-size: 12px;
-	line-height: 20px;
-	padding: 0px 0px 0px 8px;
+	line-height: 21px;
+	padding: 0px 0px 0px 0px;
 	font-weight: 700;	
 	letter-spacing: -0.4px;
-	margin: 0px 0px 10px 39px;
+	margin: 0px 0px 10px 47px;
 }
 
 .header .btn{
 	margin: 0px 0px 6px 45px;
-	padding: 12px 28px;
+	padding: 11px 28px;
 	font-size: 14px;
 	text-decoration: none;
 	color: black;
-	line-height: 40px;
+	line-height: 41px;
 	font-weight: 600;
 }
 
@@ -161,7 +151,7 @@ body{
 .btn.btn-default:hover{
 	transition: all .8s ease;
 	background-color: #FFFF00;
-	color: #CD950C;
+	color: rgb(0,0,0);
 }
 
 .header .ph_number .phone_number{
@@ -179,12 +169,13 @@ body{
 
 /*first_screen begin*/
 .screen.__main_login{
-	top: 150px;
 	padding: 0;
-	height:calc(124vh - 150px);
 	background: url(../img/background_main.jpg)no-repeat;
 	background-size: cover;
 	position: relative;
+	height: calc(200vh - 147px);
+	min-height: 700px;
+	max-height: 800px;
 }
 
 .dimming{
@@ -198,12 +189,11 @@ body{
 }
 
 .screen.__main_login .container{
-	min-height: 600px;
-	max-height: 800px;
-	top: 220px;
 	position: relative;
 	text-align: center;
 	z-index: 10;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .screen.__main_login .container h1{
@@ -229,7 +219,7 @@ body{
 }
 
 .container .screen1-shape{
-	display: block;
+	display: inline-block;
 	background: url("../img/shape.png") no-repeat; 
 	height: 110px;
 	width: 110px;
@@ -241,7 +231,7 @@ body{
 	font-size: 0;
 	display: inline-block;
 	content-align: center;
-	border: 15px solid rgba(255,255,255,.5);
+	border: 17px solid rgba(255,255,255,.5);
 }
 
 .container .check_domain form{
@@ -249,99 +239,154 @@ body{
 	line-height: 0;
 	font-size: 0;
 	width: 550px;
-	height: 70px;
 }
 
 .check_domain form #domain_name{
-	text-align: center;
-	padding-left: 10px; 
+	padding-left: 35px; 
 	border: 0;
 	width: 270px;
 	float: left;
-	height: 70px;
 	font-size: 20px;
 	font-weight: 200px;
 }
 
 .container .check_domain form input{
-	height: 50px;
+	height: 60px;
 	border: 0;
 	float: left;
 	width: 100px;
-	height: 70px;
 }
 
 .container .check_domain form select{
-	height: 50px;
+	height: 60px;
 	border: 0;
 	float: left;
-	height: 70px;
-	width: 130px;
-	background: rgb(255,255,62);
+	width: 120px;
+	border-radius: 0px;
+	background: rgb(255,225,62);
 	font-size: 20px;
-	padding: 0 30px 0 30px;
+	padding: 0 25px 0 25px;
 
 }
 
 .container .check_domain form #check_availability{
-	width: 150px;
-	background: rgb(255,255,62);
+	width: 160px;
+	background: rgb(255,225,62);
 	border-left: 1px solid white;
 	font-size: 15px;
 	color: rgb(255,253,242);
 	font-weight: bold;
+	padding: 0 10px 0 10px;
 }
 
 .container .check_domain form #check_availability:hover{
 	cursor: pointer;
 	border: 2px solid white;
-	background:  rgb(255,225,62);
+	background:  rgb(255,255,255);
+	color: rgb(255,225,62);
+	transition: all .8s ease;
 }
 /*first_screen end*/
 
 /*second_screen begin*/
-	.screen_servises{
-		display: block;
-		height: 650px;
-		z-index: 5;
-	}
+.screen_servises .container{
+	font-family: 'Raleway', sans-serif;
+	padding: 110px 0 110px 0;
+} 
 
-.screen_servises .screen-webhost{
-		float: left;
-		background: rgb(32,34,66);
-		height: 100%;
-		width: 50%;
+ .screen_servises .col-1.web,  .col-2.dom{
+	padding: 0 70px 0 60px;
 }
 
-.screen_servises .screen-webhost p{
-		z-index: 20;
-		color: white;
-		font-size: 20px;
+.row .col-1{
+ 	width:50%;
+ 	float: left;
+ 	padding: 
+}
+
+.row .col-2{
+ 	width:50%;
+ 	float: left;
+}
+
+
+.screen_servises .icon{
+	height: 200px;
+	display: inline-block;
+	
+}
+
+.screen_servises .icon._webhost{
+	background: url("../img/servises.png") no-repeat;
+	width: 170px;	
+	background-size: contain;
+}
+
+.screen_servises .icon._domain{
+	font-size: 140px;
+	font-family: 'Lato';
+	color: rgb(32,34,66);
+	font-weight: bold;
+
+}
+
+
+.screen_servises .col-1 h3, .col-2 h3{
+	color: #FFF;
+	font-size: 35px;
+	line-height: 40px;
+	padding: 10px 0 20px 0;
+}
+
+.screen_servises .row p{
+	color: #FFF;
+	font-weight: lighter;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.screen_servises .row .serises_btn{
+	margin: 30px 0 30px 0;
+	display: inline-block;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px 55px;
+	border: 4px solid #FFF;
+
+}
+
+.screen_servises .row .serises_btn:hover{
+	background: linear-gradient(45deg,rgb(32,34,66),rgb(255,255,62));
+	transition: all .8s ease;
+	color: #FFF;
+	font-weight: 800px;
+	cursor: pointer;
+}
+
+.screen_servises{
+	position: relative;
+}
+
+.screen_servises .servises .bouth{
+	width:50%;
+	position: absolute;
+	top: 0; bottom: 0;
+	z-index: 1;
+}
+.screen_servises .screen-webhost{
+	background: rgb(32,34,66);
+	left: 0;
 }
 
 .screen_servises .screen-domain{
-		float: right;
-		background: rgb(255,255,62);
-		height: 100%;
-		width: 50%;
+ 	background: rgb(255,255,62);
+ 	right: 0;
+}
+.screen_servises .container{
+	position: relative;
+	text-align: center;
+	z-index: 10;
 }
 
-.screen_servises .screen-domain p{
-		z-index: 20;
-		color: white;
-		font-size: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*first_screen end*/
-
-
+/*second_screen end*/
