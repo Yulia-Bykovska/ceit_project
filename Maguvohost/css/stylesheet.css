@@ -9,13 +9,13 @@
 
 *{
 	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
 }
+
 body{
 	font-family: 'Roboto Slab';
-	padding: 147px 0 0 0;
-}
+	padding: 0;
+	margin: 0;
+} 
 .container{
 	margin: 0 auto;
 	width: 1170px;
@@ -30,14 +30,14 @@ body{
 .header{
 	z-index: 999;
 	position: fixed; 
-	top: 0; 
+	top: 0;
 	width: 100%;
 	background: #FFF;
 }
 .logotype{
 	display: inline-block;
 	float: left;
-	margin: 48px 55px 49px 0px;
+	margin: 57px 65px 57px 0px;
 }
 
 .header .logotype .logo_img{
@@ -46,16 +46,15 @@ body{
 	width: 33px;
 	background: url("../img/logo.svg")center no-repeat;
 	background-size: contain;
-	margin: 10px 0 0 0;
+	margin: 0 10px 0 0;
 }
 
 .header .logotype .logo{
-	font-size: 30px;
-	padding: 10px 10px 10px 12px;
 	float: left;
+	font-size: 30px;
+	line-height: 30px;
 	text-decoration: none;
 	color: black;	
-	line-height: 30px;
 	font-weight: 500;
 	font-family: 'Rockwell';
 }
@@ -71,17 +70,17 @@ body{
 	text-transform: uppercase;
 	list-style: none;
 	font-size: 17px;
-	line-height: 17px;
+	line-height: 20px;
 	font-family: 'Questrial', sans-serif;
 	font-weight: 500;
 	letter-spacing: -0.5px;
-	margin: 50px 0px 45px 0px;
+	margin: 68px 0px 59px 0px;
 
 }
 
 .header .nav li{
 	float: left;
-	padding: 20px 0px 15px 40px;
+	padding: 0px 0px 0px 40px;
 }
 
 .header .nav li:last-child{
@@ -95,47 +94,42 @@ body{
 
 .header .nav a:hover{
 	color: #FFD700;
-	.text-decoration: underline;
 }
 
 
 .header .container .contact{
 	float: right;
 	border-left: 1px solid rgb(235,235,235);
-	margin: 0px 0px 0px 0px;
-	padding: 35px 0px 17px 0px;
+	padding: 35px 0px 25px 50px;
 	font-family: 'Montserrat';
 }
 
-.btn-number{
-	margin: 0;
+.header .container .btn-number{
+	margin: 20px 0 0 0;
 	clear: both;
 	display: inline-block;
 }
 
 .btn_chat{
 	float: left;
-	margin: 10px 0px 10px 5px;
 	padding: 0px 23px 0px 0px;
 	border-right: 1px solid rgb(186,187,196);
 }
 
 .ph_number{
 	float: right;
-	margin: 20px 0 20px 0px;
+	margin: 10px 0 10px 0;
 }
 
 .header .contact p{
 	font-size: 12px;
-	line-height: 21px;
-	padding: 0px 0px 0px 0px;
+	line-height: 12px;
 	font-weight: 700;	
 	letter-spacing: -0.4px;
-	margin: 0px 0px 10px 47px;
+	margin: 0px 0px 10px 0px;
 }
 
 .header .btn{
-	margin: 0px 0px 6px 45px;
 	padding: 11px 28px;
 	font-size: 14px;
 	text-decoration: none;
@@ -163,17 +157,18 @@ body{
 	font-size: 25px;
 	line-height: 20px;
 	padding: 0px 0px 0px 15px;
-	}
+}
 
 /*header end*/
 
 /*first_screen begin*/
 .screen.__main_login{
+	margin: 0;
 	padding: 0;
 	background: url(../img/background_main.jpg)no-repeat;
 	background-size: cover;
 	position: relative;
-	height: calc(200vh - 147px);
+	height: 100vh;
 	min-height: 700px;
 	max-height: 800px;
 }
@@ -195,8 +190,12 @@ body{
 	top: 50%;
 	transform: translateY(-50%);
 }
+.screen.__main_login .container .main-login-contain{
+	position: relative;
+	margin: 100px;
+}
 
-.screen.__main_login .container h1{
+.screen.__main_login .container .main_name{
 	font-size: 45px;
 	color: white;
 	text-align: center;
@@ -220,7 +219,7 @@ body{
 
 .container .screen1-shape{
 	display: inline-block;
-	background: url("../img/shape.png") no-repeat; 
+	background: url("../img/Shape-6.png") no-repeat; 
 	height: 110px;
 	width: 110px;
 }
@@ -235,7 +234,7 @@ body{
 }
 
 .container .check_domain form{
-	height: 50px;
+	height: 60px;
 	line-height: 0;
 	font-size: 0;
 	width: 550px;
@@ -266,7 +265,14 @@ body{
 	background: rgb(255,225,62);
 	font-size: 20px;
 	padding: 0 25px 0 25px;
+}
 
+.container .check_domain .select_arrow .arrow-down:after{
+	content: '';
+	border: 15px solid transparent;
+	position: absolute;
+	right: ; top: 24px;
+	border-top: 15px solid black;
 }
 
 .container .check_domain form #check_availability{
