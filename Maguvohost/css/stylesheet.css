@@ -1,21 +1,100 @@
+
 @font-face {
-    font-family: Rockwell;
-	src: url(../fonts/rockwell-bold.eot);
-   }
+    font-family: 'Rockwell';
+    src: url('../fonts/rockwell-bold.eot');
+    src: url('../fonts/rockwell-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rockwell-bold.woff2') format('woff2'),
+         url('../fonts/rockwell-bold.woff') format('woff'),
+         url('../fonts/rockwell-bold.ttf') format('truetype'),
+         url('../fonts/rockwell-bold.svg#rockwell-boldregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
 @font-face {
-    font-family: Raleway;
-	src: url(../fonts/raleway-semibold.eot);
-   }
+    font-family: 'Rockwell';
+    src: url('../fonts/rockwell-regular.eot');
+    src: url('../fonts/rockwell-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rockwell-regular.woff') format('woff'),
+         url('../fonts/rockwell-regular.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold.woff2') format('woff2'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#latobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
 
 *{
 	box-sizing: border-box;
 }
 
 body{
-	font-family: 'Roboto Slab';
+	font-family:"Rockwell";
 	padding: 0;
 	margin: 0;
 } 
+
+.clearfix{
+	content: '';
+	clear: both;
+}	
+
+.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1{
+	float: left;
+}
+
+.col-12{
+	width: 100%;
+}
+.col-11{
+	width: 91.6666667%;
+}
+.col-10 {
+  	width: 83.33333333%;
+}
+.col-9 {
+  	width: 75%;
+}
+.col-8 {
+  	width: 66.66666667%;
+}
+.col-7 {
+  	width: 58.33333333%;
+}
+.col-6 {
+ 	width: 50%;
+}
+.col-5 {
+  	width: 41.66666667%;
+}
+.col-4 {
+  	width: 33.33333333%;
+}
+.col-3 {
+ 	width: 25%;
+}
+.col-2 {
+  	width: 16.66666667%;
+}
+.col-1 {
+  	width: 8.33333333%;
+}
+
+
 .container{
 	margin: 0 auto;
 	width: 1170px;
@@ -71,7 +150,7 @@ body{
 	list-style: none;
 	font-size: 17px;
 	line-height: 20px;
-	font-family: 'Questrial', sans-serif;
+	
 	font-weight: 500;
 	letter-spacing: -0.5px;
 	margin: 68px 0px 59px 0px;
@@ -88,6 +167,7 @@ body{
 }
 
 .header .nav a{
+	font-family: "Raleway";
 	text-decoration: none;	
 	color: black;	
 }
@@ -99,13 +179,12 @@ body{
 
 .header .container .contact{
 	float: right;
-	border-left: 1px solid rgb(235,235,235);
+	border-left: 1px solid #DDDDDD;
 	padding: 35px 0px 25px 50px;
-	font-family: 'Montserrat';
+	
 }
 
 .header .container .btn-number{
-	margin: 20px 0 0 0;
 	clear: both;
 	display: inline-block;
 }
@@ -121,12 +200,12 @@ body{
 	margin: 10px 0 10px 0;
 }
 
-.header .contact p{
+.header .contact .contact_help{
+	font-family: "Raleway";
 	font-size: 12px;
 	line-height: 12px;
 	font-weight: 700;	
-	letter-spacing: -0.4px;
-	margin: 0px 0px 10px 0px;
+	margin: 0px 0px 30px 0px;
 }
 
 .header .btn{
@@ -136,21 +215,22 @@ body{
 	color: black;
 	line-height: 41px;
 	font-weight: 600;
+	font-family: "Raleway";
 }
 
 .btn.btn-default{
-	background-color: rgb(255,225,62);
+	background-color: #FFE13E;
 }
 
 .btn.btn-default:hover{
 	transition: all .8s ease;
 	background-color: #FFFF00;
-	color: rgb(0,0,0);
+	color: #000000;
 }
 
 .header .ph_number .phone_number{
 	float: right;
-	font-family: 'Rockwell';
+	font-family: "Lato";
 	font-weight: bold;
 	text-decoration: none;
 	color: black;
@@ -168,8 +248,7 @@ body{
 	background: url(../img/background_main.jpg)no-repeat;
 	background-size: cover;
 	position: relative;
-	height: 100vh;
-	min-height: 700px;
+	min-height: 500px;
 	max-height: 800px;
 }
 
@@ -177,30 +256,33 @@ body{
 	position: absolute;
 	z-index: 1;
 	background: rgba(0,0,0,.3);
-	top: 0;
-	right: 0;	
-	bottom: 0;
-	left: 0;  
+	top:0;right: 0;bottom: 0;left: 0;  
 }
 
 .screen.__main_login .container{
-	position: relative;
+	.position: relative;
+	height: calc(100vh + 147px);
+}
+
+.screen.__main_login .container .main-login-contain{
+	left: 0;right: 0;
+
+	position: absolute;
 	text-align: center;
-	z-index: 10;
+	z-index: 2;
 	top: 50%;
 	transform: translateY(-50%);
+	
 }
-.screen.__main_login .container .main-login-contain{
-	position: relative;
-	margin: 100px;
-}
+
+
 
 .screen.__main_login .container .main_name{
 	font-size: 45px;
 	color: white;
 	text-align: center;
 	padding: 0;
-	font-family: 'Rockwell';
+	font-family: "Rockwell";
 	font-weight: lighter;
 	letter-spacing: 1px;
 	
@@ -213,13 +295,13 @@ body{
 	font-size: 30px;
 	font-weight: lighter;
 	letter-spacing: 1px;
-	font-family: 'Lato', sans-serif;
+	font-family: "Raleway";
 	letter-spacing: 2px;
 }
 
 .container .screen1-shape{
 	display: inline-block;
-	background: url("../img/Shape-6.png") no-repeat; 
+	background: url("../img/Shape.png") no-repeat; 
 	height: 110px;
 	width: 110px;
 }
@@ -234,6 +316,7 @@ body{
 }
 
 .container .check_domain form{
+	font-family: "Raleway";
 	height: 60px;
 	line-height: 0;
 	font-size: 0;
@@ -262,11 +345,36 @@ body{
 	float: left;
 	width: 120px;
 	border-radius: 0px;
-	background: rgb(255,225,62);
+	background: #FFE13E;
 	font-size: 20px;
 	padding: 0 25px 0 25px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: 2;
 }
 
+.select_arrow select{
+	position: relative;
+}	
+
+.arrow{
+	position: absolute;
+	height: 10px; width: 10px;
+	margin: 23px 0 0 355px;
+}
+
+.arrow .select_arrow{
+	position: absolute;
+	height: 10px; width: 10px;
+	border-right:2px solid white;
+	border-bottom:2px solid white;
+	transform: rotate(45deg);
+	z-index: 2;
+	
+}
+
+/*
 .container .check_domain .select_arrow .arrow-down:after{
 	content: '';
 	border: 15px solid transparent;
@@ -274,13 +382,13 @@ body{
 	right: ; top: 24px;
 	border-top: 15px solid black;
 }
-
+*/
 .container .check_domain form #check_availability{
 	width: 160px;
-	background: rgb(255,225,62);
+	background: #FFE13E;
 	border-left: 1px solid white;
 	font-size: 15px;
-	color: rgb(255,253,242);
+	color: #FFF7CC;
 	font-weight: bold;
 	padding: 0 10px 0 10px;
 }
@@ -288,8 +396,8 @@ body{
 .container .check_domain form #check_availability:hover{
 	cursor: pointer;
 	border: 2px solid white;
-	background:  rgb(255,255,255);
-	color: rgb(255,225,62);
+	background: #FFF;
+	color: #FFE13E;
 	transition: all .8s ease;
 }
 /*first_screen end*/
@@ -303,22 +411,31 @@ body{
  .screen_servises .col-1.web,  .col-2.dom{
 	padding: 0 70px 0 60px;
 }
+.row{
+	content: '';s
+	clear: both;
+}
 
+.row:after{
+	content: '';
+	clear: both;
+	display: block;
+}
 .row .col-1{
  	width:50%;
  	float: left;
- 	padding: 
 }
 
 .row .col-2{
  	width:50%;
- 	float: left;
+ 	float: right;
 }
 
 
 .screen_servises .icon{
 	height: 200px;
 	display: inline-block;
+	font-family: 'Raleway', sans-serif;
 	
 }
 
@@ -330,8 +447,8 @@ body{
 
 .screen_servises .icon._domain{
 	font-size: 140px;
-	font-family: 'Lato';
-	color: rgb(32,34,66);
+	font-family: 'Raleway', sans-serif;
+	color: #202242;
 	font-weight: bold;
 
 }
@@ -349,6 +466,7 @@ body{
 	font-weight: lighter;
 	font-size: 14px;
 	line-height: 25px;
+	font-family: 'Raleway', sans-serif;
 }
 
 .screen_servises .row .serises_btn{
@@ -374,25 +492,254 @@ body{
 	position: relative;
 }
 
-.screen_servises .servises .bouth{
+.screen_servises .bouth{
 	width:50%;
 	position: absolute;
 	top: 0; bottom: 0;
 	z-index: 1;
 }
 .screen_servises .screen-webhost{
-	background: rgb(32,34,66);
+	background: #202242;
 	left: 0;
 }
 
 .screen_servises .screen-domain{
- 	background: rgb(255,255,62);
+ 	background: #FFE13E;
  	right: 0;
 }
 .screen_servises .container{
 	position: relative;
 	text-align: center;
-	z-index: 10;
+	z-index: 2;
 }
 
 /*second_screen end*/
+/*third_screen begin*/
+
+.features{
+	background: #FBF8F1;
+	background: url('../img/Star.png') center no-repeat;
+}
+.features p,.features h2{
+	margin: 0;
+}
+
+.features .container{
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: 'Raleway',sans-serif;
+	padding: 100px 0;
+}
+
+.features .container .features_name{
+	text-transform: capitalize;
+	color: #202242;
+	padding: 0px 0 25px 0;
+	font-weight: 800;
+}
+
+.features .container .features_text{
+	text-transform: capitalize;
+	color: #202242;
+}
+
+.features .row.wrap{
+	position: relative;
+	padding: 100px 0 0 0;
+	font-family: 'Rockwell', sans-serif;
+}
+
+.features .row.wrap .col-3{
+	padding: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+.features .row.wrap .col-3 span{
+	display: block;
+	margin: 0 auto;
+	height: 130px;
+	width: 130px;
+	background-size: contain;
+}
+
+.features .row.wrap .col-3 .col_img_border:after{
+	 border: 1px solid #8D8D99;
+	 width: 70px;
+	 display: inline-block;
+	 content: '';
+	 margin:30px 0 30px 0;
+}
+
+.features .row.wrap .col-3 .features_col_img-1{
+	background: url('../img/img-1_col.png') center no-repeat;
+	
+}
+
+.features .row.wrap .col-3 .features_col_img-2{
+	background: url('../img/img-2_col.png') center no-repeat;
+}
+
+.features .row.wrap .col-3 .features_col_img-3{
+	background: url('../img/img-3_col.png') center no-repeat;
+}
+
+.features .row.wrap .col-3 .features_col_img-4{
+	background: url('../img/img_4_col.png') center no-repeat;
+}
+
+.features .row.wrap .col-3 .features_col_heading{
+	font-size: 28px;
+	color: #F6DF66;
+	font-weight: 550;
+	margin-top: 0px; 
+}
+
+.features .row.wrap .col-3 .features_col_text{
+	font-size: 15px;
+	font-weight: lighter;
+	line-height: 25px;
+	font-family: 'Raleway', sans-serif;
+}
+/*third_screen end*/
+/*fourth_screen logo begin*/
+.screen_logos{
+	margin: 0 auto;
+	position: relative;
+}
+.screen_logos .container{
+	font-family: 'Raleway', sans-serif;
+}
+.screen_logos .row {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+
+.screen_logos .container .row.wraper .col-4{
+	display: inline-block;	
+}
+
+.screen_logos .row .col-4 .screen_logos_clients_title{
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: bold;
+}
+.screen_logos .row .col-4 .screen_logos_clients_text{
+	font-size: 15px;
+	line-height: 25px;
+	color: #D5D5D5;
+}
+
+.screen_logos .row .col-8{
+	padding: 50px 0 0 50px;
+ 	float: right;
+ 	display: inline-block;
+ 	position: relative;
+}
+
+.screen_logos .row .col-2{
+	width: 25%;
+	position: relative;
+	display:inline-block;
+}
+
+.screen_logos .row .col-2{
+	position: relative;
+	display: inline-block;
+
+
+}
+.screen_logos .row .col-2 img{
+	height: 100%;
+	width: 90%;
+
+	
+}
+
+/*fourth_screen logo end*/
+/*fourth_screen testimonials begin*/
+.screen_testimonials {
+	position: relative;
+}
+.screen_testimonials .container{
+
+}
+.screen_testimonials .container .row.wraper{
+	margin: 50px 0 100px 0;
+	
+}
+.screen_testimonials .container .row.wraper .col-4{
+	padding: 10px; 
+}
+
+.screen_testimonials .container .row.wraper .col-4 .testimonials_text{
+	padding: 10px;
+	background: #FAF9F9;
+	color: #C8C7C7;
+}
+
+.screen_testimonials .container .row.wraper .col-4 .testimonials_text .comment{
+	font-style: italic;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.screen_testimonials .container .row.wraper .col-4 .comment_name{
+	color: #777777;
+}
+
+.screen_testimonials .container .row.wraper .col-4 .testimonials_text img{
+	position: absolute;
+	margin: -50px 0 0 250px;
+
+}
+/*fourth_screen testimonials end*/
+/*fourth_screen pricing begin*/
+.pricing{
+	position: relative;
+	background: #202242;
+}
+
+.pricing .container{
+	padding: 100px 0 70px 100px;
+	display: inline-block;
+}
+
+.pricing .container .pricing_plans{
+	display: inline-block;
+}
+
+.pricing .pricing_title{
+	margin: 0;
+	color: #FFFFFF;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: 'Raleway';
+}
+
+.pricing .container .pricing_text{
+	font-size: 15px;
+	line-height: 15px;
+	font-family: 'Raleway';
+	color: #4D4E66;
+}
+
+.pricing .container .pricing_btn{
+	font-family: 'Raleway';
+	font-weight: 600;
+	position: relative;
+	font-size: 20px;
+	line-height: 20px;
+	margin: 0 0 0 140px;
+	display: inline-block;
+	padding: 20px 40px;
+	background: #FFE13E;
+	color: #3E3B41;
+	border: 2px solid #FFFFFF;
+}
+
+/*fourth_screen pricing end*/
