@@ -150,7 +150,6 @@ body{
 	list-style: none;
 	font-size: 17px;
 	line-height: 20px;
-	
 	font-weight: 500;
 	letter-spacing: -0.5px;
 	margin: 68px 0px 59px 0px;
@@ -244,12 +243,10 @@ body{
 /*first_screen begin*/
 .screen.__main_login{
 	margin: 0;
-	padding: 0;
+	padding: 147px 0 0 0;
 	background: url(../img/background_main.jpg)no-repeat;
 	background-size: cover;
 	position: relative;
-	min-height: 500px;
-	max-height: 800px;
 }
 
 .dimming{
@@ -260,28 +257,27 @@ body{
 }
 
 .screen.__main_login .container{
-	.position: relative;
-	height: calc(100vh + 147px);
+	position: relative;
+	min-height: 500px;
+	max-height: 800px;
+	height: calc(100vh - 147px);
 }
 
 .screen.__main_login .container .main-login-contain{
 	left: 0;right: 0;
-
 	position: absolute;
 	text-align: center;
 	z-index: 2;
 	top: 50%;
 	transform: translateY(-50%);
-	
 }
-
-
 
 .screen.__main_login .container .main_name{
 	font-size: 45px;
 	color: white;
 	text-align: center;
 	padding: 0;
+	margin-top: 0;
 	font-family: "Rockwell";
 	font-weight: lighter;
 	letter-spacing: 1px;
@@ -517,43 +513,45 @@ body{
 /*third_screen begin*/
 
 .features{
-	background: #FBF8F1;
-	background: url('../img/Star.png') center no-repeat;
+	background: #FBF8F1 url('../img/Shape-11.png') center no-repeat;
 }
 .features p,.features h2{
 	margin: 0;
 }
-
 .features .container{
 	position: relative;
 	text-align: center;
-	font-size: 30px;
-	line-height: 30px;
 	font-family: 'Raleway',sans-serif;
-	padding: 100px 0;
+	padding: 100px 20px;
 }
 
 .features .container .features_name{
 	text-transform: capitalize;
+	font-size: 30px;
+	line-height: 30px;
 	color: #202242;
 	padding: 0px 0 25px 0;
 	font-weight: 800;
 }
 
 .features .container .features_text{
+	font-size: 30px;
+	line-height: 30px;
 	text-transform: capitalize;
 	color: #202242;
 }
 
 .features .row.wrap{
 	position: relative;
-	padding: 100px 0 0 0;
+	margin: 100px 0 0 0;
 	font-family: 'Rockwell', sans-serif;
+	margin-right: -20px;
+	margin-left: -20px;
 }
 
 .features .row.wrap .col-3{
 	padding: 20px;
-	display: inline-block;
+	.display: inline-block;
 	text-align: center;
 }
 
@@ -563,14 +561,6 @@ body{
 	height: 130px;
 	width: 130px;
 	background-size: contain;
-}
-
-.features .row.wrap .col-3 .col_img_border:after{
-	 border: 1px solid #8D8D99;
-	 width: 70px;
-	 display: inline-block;
-	 content: '';
-	 margin:30px 0 30px 0;
 }
 
 .features .row.wrap .col-3 .features_col_img-1{
@@ -592,9 +582,18 @@ body{
 
 .features .row.wrap .col-3 .features_col_heading{
 	font-size: 28px;
+	line-height: 28px;
 	color: #F6DF66;
 	font-weight: 550;
-	margin-top: 0px; 
+}
+
+.features .row.wrap .col-3 .features_col_heading:before{
+	border: 1px solid #8D8D99;
+	width: 70px;
+	display: block;
+	align-items: center;
+	content: '';
+	margin:30px auto;
 }
 
 .features .row.wrap .col-3 .features_col_text{
@@ -618,9 +617,8 @@ body{
 	display: block;
 }
 
-
 .screen_logos .container .row.wraper .col-4{
-	display: inline-block;	
+	float: left;
 }
 
 .screen_logos .row .col-4 .screen_logos_clients_title{
@@ -635,29 +633,24 @@ body{
 }
 
 .screen_logos .row .col-8{
-	padding: 50px 0 0 50px;
- 	float: right;
- 	display: inline-block;
+	margin: 50px 0 0 0px;
+	padding-left:50px; 
  	position: relative;
 }
 
 .screen_logos .row .col-2{
 	width: 25%;
 	position: relative;
-	display:inline-block;
+	float: left;
 }
 
-.screen_logos .row .col-2{
-	position: relative;
-	display: inline-block;
-
-
+.screen_logos .row .col-2 a{
+	line-height: 0;
 }
+
 .screen_logos .row .col-2 img{
 	height: 100%;
 	width: 90%;
-
-	
 }
 
 /*fourth_screen logo end*/
@@ -665,9 +658,7 @@ body{
 .screen_testimonials {
 	position: relative;
 }
-.screen_testimonials .container{
 
-}
 .screen_testimonials .container .row.wraper{
 	margin: 50px 0 100px 0;
 	
@@ -686,15 +677,31 @@ body{
 	font-style: italic;
 	font-size: 15px;
 	line-height: 20px;
+	margin: 0 0 50px 0;
 }
 
 .screen_testimonials .container .row.wraper .col-4 .comment_name{
 	color: #777777;
 }
 
+.screen_testimonials .testimonials_text .testimonials_client_picture{
+	position: relative;
+	display: inline-block;
+	background-size: cover;
+	height: 100px;
+	width: 100px;
+	overflow: hidden;
+	border-radius: 100%;
+	margin-top: -50px;
+	float: right;
+	border: 4px solid #E0DFE4;
+
+}
+
 .screen_testimonials .container .row.wraper .col-4 .testimonials_text img{
-	position: absolute;
-	margin: -50px 0 0 250px;
+		
+	/*position: absolute;
+	margin: -50px 0 0 250px;*/
 
 }
 /*fourth_screen testimonials end*/
@@ -705,8 +712,7 @@ body{
 }
 
 .pricing .container{
-	padding: 100px 0 70px 100px;
-	display: inline-block;
+	padding: 100px 50px;
 }
 
 .pricing .container .pricing_plans{
@@ -716,30 +722,159 @@ body{
 .pricing .pricing_title{
 	margin: 0;
 	color: #FFFFFF;
-	font-size: 30px;
-	line-height: 30px;
+	font-size: 35px;
+	line-height: 35px;
 	font-family: 'Raleway';
 }
 
 .pricing .container .pricing_text{
-	font-size: 15px;
-	line-height: 15px;
+	font-size: 20px;
+	line-height: 20px;
 	font-family: 'Raleway';
 	color: #4D4E66;
 }
 
 .pricing .container .pricing_btn{
+	position: relative;
+	display: inline-block;
+}
+
+.pricing .container .pricing_btn .btn_pricing_plans{
+	display: inline-block;
 	font-family: 'Raleway';
 	font-weight: 600;
-	position: relative;
+	text-decoration: none;
 	font-size: 20px;
 	line-height: 20px;
-	margin: 0 0 0 140px;
-	display: inline-block;
-	padding: 20px 40px;
+	padding: 30px 50px;
 	background: #FFE13E;
-	color: #3E3B41;
-	border: 2px solid #FFFFFF;
+	color: #202242;
+	border: 4px solid #FFFFFF;
+}
+
+.pricing .container .pricing_btn .btn_pricing_plans:hover{
+	background: #202242;
+	color: #FFE13E;
+	transition: all 0.8s ease;
 }
 
 /*fourth_screen pricing end*/
+/*footer begin*/
+.footer .container{
+	z-index: 1;
+	background: #373856;
+	position: relative;
+	width: 100%;
+}		
+
+.footer_map{
+	position: absolute;
+	background: url('../img/footer_bacground.png') no-repeat;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 7%;
+    opacity: 0.2;
+  
+}
+
+.footer .container .col-3 .container{
+	margin: 200px 0 0 0;
+}
+
+.footer .container .map_pointer{
+	color: #FFF;
+	font-family: 'Raleway';
+	font-size: 20px;
+	line-height: 30px;
+	display: inline-block;	
+}
+.footer .container .img_yogykarta{
+	background: url(../img/yogykarta.png) center no-repeat; 
+	background-size: contain;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+}
+
+.footer .container .nav{
+	position: relative;
+	padding: 0 100px 100px 0;
+	font-family: 'Raleway';
+	text-align: right;
+}
+.footer .row{
+	float: left;
+	width: 100%;
+}
+
+.footer .row.col-3{
+	position: relative;
+	display: inline-block;
+}
+
+.footer .container .nav h4{
+	color: #FCFCFC;
+	font-size: 20px;
+}
+
+.footer .container .nav li{
+	font-size: 15;
+	line-height: 30px;
+	list-style: none;
+	padding: 0; margin: 0;
+}
+.footer .container .nav li a{
+	color: #FCFCFC;
+	padding: 0; margin: 0;
+}
+.footer .container .nav a:hover{
+	color: #FFE13E;
+}
+.nav_social{
+	margin: 20px 0 50px 0;
+}
+.nav_social a{
+	margin: 0 5px;
+}
+.nav_social a:last-child{
+	margin-right: 0;
+}
+
+.footer .row .col-6{
+	width: 50%;
+	float: left;
+}
+
+.footer .row{
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 100px 0 0 0;
+}
+
+.back_to_top{
+	color: #FCFCFC;
+	font-size: 15px;
+}
+
+.footer .copyright .mag_right{
+	display: block;
+	color: #FFF;
+	font-family: 'Raleway';
+	font-size: 15px;
+	margin: 10px 0 70px 0;
+}
+
+.copyright{
+	position: relative;
+	text-align: center;
+}
+/*footer end*/
+
+
+
+
+
+
+
