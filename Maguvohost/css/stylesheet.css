@@ -347,17 +347,20 @@ body{
 	-webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    z-index: 2;
+    z-index: -1;
 }
 
 .select_arrow select{
 	position: relative;
+	z-index: 3;
 }	
 
 .arrow{
 	position: absolute;
 	height: 10px; width: 10px;
 	margin: 23px 0 0 355px;
+	z-index: 1;
+	background: #FFE13E;
 }
 
 .arrow .select_arrow{
@@ -770,16 +773,21 @@ body{
 .footer_map{
 	position: absolute;
 	background: url('../img/footer_bacground.png') no-repeat;
-	top: 0;
+	top: 130px;
     right: 0;
     bottom: 0;
-    left: 7%;
+    left: 150px;
+    height: auto;
+    width: 50%;
     opacity: 0.2;
+    background-size: contain;
+    z-index: 2;
   
 }
 
 .footer .container .col-3 .container{
 	margin: 200px 0 0 0;
+	z-index: 2;
 }
 
 .footer .container .map_pointer{
@@ -788,6 +796,7 @@ body{
 	font-size: 20px;
 	line-height: 30px;
 	display: inline-block;	
+	z-index: 3;
 }
 .footer .container .img_yogykarta{
 	background: url(../img/yogykarta.png) center no-repeat; 
@@ -795,6 +804,7 @@ body{
 	height: 50px;
 	width: 50px;
 	display: inline-block;
+	z-index: 3;
 }
 
 .footer .container .nav{
