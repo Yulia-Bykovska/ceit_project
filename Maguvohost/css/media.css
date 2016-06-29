@@ -1,0 +1,711 @@
+
+/*media queries for phones and portrait tablets begin*/
+@media (max-width:767px){
+.container{
+	width: auto;
+}
+/*media for 1 screen begin*/
+
+.screen.__main_login .container{
+	height: calc(100vh);
+}
+
+.container .check_domain form{
+	width: 300px;
+}
+
+.check_domain form #domain_name{
+	padding-left: 20px; 
+	border: 0;
+	width: 100%;
+	float: left;
+	font-size: 17px;
+	font-weight: 200px;
+	display: block;
+}
+
+.container .check_domain form select{
+	width: 140px;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 0 30px 0 30px;
+}
+.container .check_domain form #check_availability{
+	font-size: 15px;
+	padding: 0 20px 0 20px;
+}
+/*media for 1 screen end*/
+/*media for 2 screen begin*/
+
+.screen_servises .container{
+	padding: 0; 
+}
+
+.screen_servises .container .row{
+	margin: 20px 0;
+}
+.row .col-1{
+ 	width:100%;
+}
+
+.row .col-2{
+ 	width:100%;
+}
+
+.screen_servises .bouth{
+	width:100%;
+	position: absolute;
+}
+.screen_servises .screen-webhost{
+	background: #FFE13E;
+	width: 100%;
+	height: auto;
+}
+
+.screen_servises .screen-domain{
+ 	background: #202242;
+ 	height: 50%;
+
+}
+/*media for 2 screen end*/
+/*media for 3 screen begin*/
+.features .container .features_name{
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.features .container .features_text{
+	font-size: 25px;
+	line-height: 25px;
+}
+
+.features .row.wrap{
+	margin-right: -20px;
+	margin-left: -20px;
+}
+/*media for 3 screen end*/
+/*media for 4 screen begin*/
+.screen_logos .row {
+	content: '';
+	clear: both;
+	display: block;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.screen_logos .container .row.wraper .col-clients{
+	width: auto;
+	float: left;
+}
+
+.screen_logos .container .row.wraper .col-4{
+	float: left;
+}
+.screen_logos .row .col-4 .screen_logos_clients_title{
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 800;
+}
+.screen_logos .row .col-4 .screen_logos_clients_text{
+	font-size: 15px;
+	line-height: 25px;
+	color: #D5D5D5;
+}
+
+.screen_logos .row .col-logos{
+	padding-left: 0px; 
+}
+
+.screen_logos .row .col-8{
+	margin: 50px 0 0 0px;
+	padding-left: 0px; 
+ 	position: relative;
+}
+
+/*media for 4 screen end*/
+/*media for 5 screen begin*/
+.pricing .container{
+	padding: 100px 50px;
+	text-align: center;
+}
+.pricing .pricing_title{
+	font-size: 23px;
+	line-height: 35px;
+}
+.pricing .container .pricing_text{
+	font-size: 17px;
+	line-height: 25px;
+}
+.pricing .container .pricing_btn .btn_pricing_plans{
+	font-size: 15px;
+	line-height: 15px;
+	padding: 20px 25px;
+}
+/*media for footer begin*/
+.footer .footer_map{
+    height: 300px;
+    left: 0px;
+}
+
+.footer .container .col-map .container .point_yogykarta{
+	margin-top: -150px;
+	margin-right: 150px;
+
+}
+.footer .container .map_pointer{
+	font-size: 15px;
+	line-height: 20px;	
+	float: left;
+}
+
+.footer .container .img_yogykarta{
+	height: 30px;
+	width: 30px;
+}
+
+.footer .container .nav{
+	padding: 0;
+	text-align: center;
+}
+
+.footer .container .nav h4{
+	font-size: 20px;
+}
+
+.footer .container .nav li{
+	font-size: 15px;
+	line-height: 30px;
+	list-style: none;
+	padding: 0; margin: 0;
+	text-align: center;
+}
+.nav_social{
+	left: 35%;
+	margin: 20px 0;	
+}
+.nav_social a{
+	margin: 0;
+}
+.nav_social a:last-child{
+	margin-right: 0;
+}
+
+.footer .row .col-6{
+	width: 50%;
+	float: left;
+}
+
+.back_to_top{
+	text-align: center;
+	color: #FCFCFC;
+	font-size: 15px;
+}
+
+.footer .copyright .mag_right{
+	display: block;
+	color: #FFF;
+	font-family: 'Raleway';
+	font-size: 15px;
+	margin: 10px 0 70px 0;
+}
+
+.copyright{
+	position: relative;
+	text-align: center;
+}
+}
+/*media queries for phones and portrait tablets end*/
+
+
+
+/* media queries for portrait phones and smaller begin*/
+@media (max-width: 480px){
+.header{
+}
+.container{
+	width: auto;
+	height: auto;
+}
+/*media for 1 screen begin*/
+.screen.__main_login .container .main_name{
+	font-size: 35px;
+}
+.screen.__main_login .container p{
+	font-size: 20px;
+}
+.container .screen1-shape{
+	height: 60px;
+	width: 60px;
+}
+.container .check_domain{
+	margin: 70px 0 0 0;
+}
+
+.container .check_domain form{
+	width: 300px;
+}
+
+.check_domain form #domain_name{
+	padding-left: 20px; 
+	border: 0;
+	width: 100%;
+	float: left;
+	font-size: 17px;
+	font-weight: 200px;
+	display: block;
+}
+
+.container .check_domain form select{
+	width: 140px;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 0 30px 0 30px;
+}
+.container .check_domain form #check_availability{
+	font-size: 15px;
+	padding: 0 20px 0 20px;
+}
+/*media for 1 screen end*/
+/*media for 2 screen begin*/
+
+
+.screen_servises .container{
+	font-family: 'Raleway', sans-serif;
+	padding: 50px 0;
+} 
+.screen_servises .container .row{
+	margin: 0;
+	padding: 0;
+}
+
+
+.row .col-1{
+ 	width:100%;
+ 	float: left;
+}
+
+.row .col-2{
+ 	width:100%;
+ 	float: right;
+}
+.screen_servises .col-1.web,  .col-2.dom{
+	padding: 0 auto;
+	margin:0; 
+}
+
+ .col-2.dom{
+ 	padding-bottom: 0;
+ }
+
+.screen_servises .icon{
+}
+
+.screen_servises .icon._webhost{
+}
+
+.screen_servises .icon._domain{
+	font-size: 120px;
+}
+
+.screen_servises .col-1 h3, .col-2 h3{
+	color: #FFF;
+	margin-top: 0;
+	font-size: 35px;
+	line-height: 40px;
+	padding: 10px 0 20px 0;
+}
+
+.screen_servises .bouth{
+	width:100%;
+	position: absolute;
+}
+.screen_servises .screen-webhost{
+	background: #FFE13E;
+	width: 100%;
+	height: auto;
+}
+
+.screen_servises .screen-domain{
+ 	background: #202242;
+ 	height: 50%;
+
+}
+/*media for 2 screen end*/
+/*media for 3 screen begin*/
+
+/*media for 3 screen end*/
+/*media for 4 screen begin*/
+.screen_logos .row {
+	display: block;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.screen_logos .row {
+	content: '';
+	clear: both;
+	display: block;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.screen_logos .container .row.wraper .col-clients{
+	width: 100%;
+	text-align: center; 
+}
+
+.screen_logos .row .col-logos{
+	margin: 40px 0 0 0px;
+	padding-left: 25px; 
+ 	position: relative;
+}
+/*media for 4 screen end*/
+/*media for 5 screen begin*/
+.pricing{
+	position: relative;
+	background: #202242;
+	text-align: center;
+}
+
+.pricing .container{
+	padding: 80px 0px;
+}
+
+.pricing .container .pricing_plans{
+	display: block;
+}
+
+.pricing .pricing_title{
+	color: #FFFFFF;
+	font-size: 22px;
+	line-height: 35px;
+}
+
+.pricing .container .pricing_text{
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.pricing .container .pricing_btn .btn_pricing_plans{
+	font-size: 15px;
+	line-height: 15px;
+	padding: 20px 40px;
+	margin-left: -100%;
+	transform: translateX(50%);
+}
+/*media for footer begin*/
+.footer .container{
+	background: #373856;
+	position: relative;
+	width: 100%;
+}		
+
+.footer .footer_map{
+	left: 0;
+    height: 150px;
+}
+
+.footer .container .point_yogykarta{
+	margin-top: 0px;
+	margin-right: 0px;
+	float: left;
+}
+
+.footer .container .map_pointer{
+	color: #FFF;
+	font-family: 'Raleway';
+	font-size: 10px;
+	line-height: 15px;
+	display: inline-block;
+}
+
+.footer .container .point_yogykarta{
+	height: 25px;
+	width: 25px;
+}
+
+.footer .container .nav .col-foo-menu{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+.footer .row{
+	float: left;
+	width: 100%;
+}
+
+.footer .row.col-3{
+	position: relative;
+	display: inline-block;
+}
+
+.footer .container .nav h4{
+	color: #FCFCFC;
+	font-size: 15px;
+}
+
+.footer .container .nav li{
+	font-size: 12px;
+	line-height: 20px;
+	list-style: none;
+	width: auto;
+	padding: 0; margin: 0;
+}
+.footer .container .nav li a{
+	color: #FCFCFC;
+	padding: 0; margin: 0
+
+}
+.footer .container .nav a:hover{
+	color: #FFE13E;
+}
+.nav_social{
+	display: block;
+}
+.nav_social a{
+	padding: 0;
+	margin: 0 5px;
+}
+.nav_social a:last-child{
+	margin-right: 0;
+}
+
+.footer .row .col-6{
+	width: 50%;
+	float: left;
+}
+
+.footer .row{
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 50px 0 0 0;
+}
+}
+/* media queries for portrait phones and smaller end*/
+
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.container{
+	width: auto;
+}
+/*media for header bedin*/
+.header{
+	width: 100%;
+}
+
+.header .nav{ 
+	margin: 68px 0px 57px 0px;
+}
+
+.header .nav li{
+	float: left;
+	padding: 0px 0px 0px 30px;
+}
+.header .nav a{
+	padding: 0;
+}
+
+.header .contact{
+ display: none;
+}
+/*media for header end*/
+
+/*media for 1 screen begin*/
+
+.screen.__main_login .container{
+	height: calc(100vh);
+}
+
+
+
+/*media for 1 screen end*/
+/*media for 2 screen begin*/
+
+.screen_servises .container{
+	padding: 0; 
+}
+
+.screen_servises .container .row{
+	margin: 20px 0;
+}
+.row .col-1{
+ 	width:100%;
+}
+
+.row .col-2{
+ 	width:100%;
+}
+
+.screen_servises .bouth{
+	width:100%;
+	position: absolute;
+}
+.screen_servises .screen-webhost{
+	background: #FFE13E;
+	width: 100%;
+	height: auto;
+}
+
+.screen_servises .screen-domain{
+ 	background: #202242;
+ 	height: 50%;
+
+}
+/*media for 2 screen end*/
+/*media for 3 screen begin*/
+.features .container .features_name{
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.features .container .features_text{
+	font-size: 25px;
+	line-height: 25px;
+}
+
+.features .row.wrap{
+	margin-right: -20px;
+	margin-left: -20px;
+}
+/*media for 3 screen end*/
+/*media for 4 screen begin*/
+.screen_logos .row {
+	content: '';
+	clear: both;
+	display: block;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.screen_logos .container .row.wraper .col-clients{
+	width: auto;
+	float: left;
+}
+
+.screen_logos .container .row.wraper .col-4{
+	float: left;
+}
+.screen_logos .row .col-4 .screen_logos_clients_title{
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 800;
+}
+.screen_logos .row .col-4 .screen_logos_clients_text{
+	font-size: 15px;
+	line-height: 25px;
+	color: #D5D5D5;
+}
+
+.screen_logos .row .col-logos{
+	padding-left: 0px; 
+}
+
+.screen_logos .row .col-8{
+	margin: 50px 0 0 0px;
+	padding-left: 0px; 
+ 	position: relative;
+}
+
+/*media for 4 screen end*/
+/*media for 5 screen begin*/
+.pricing .container{
+	padding: 100px 50px;
+	text-align: center;
+}
+.pricing .pricing_title{
+	font-size: 23px;
+	line-height: 35px;
+}
+.pricing .container .pricing_text{
+	font-size: 17px;
+	line-height: 25px;
+}
+.pricing .container .pricing_btn .btn_pricing_plans{
+	font-size: 15px;
+	line-height: 15px;
+	padding: 20px 25px;
+}
+/*media for footer begin*/
+.footer .footer_map{
+    height: 300px;
+    left: 0px;
+}
+
+.footer .container .col-map .container .point_yogykarta{
+	margin-top: -150px;
+	margin-right: 150px;
+
+}
+.footer .container .map_pointer{
+	font-size: 15px;
+	line-height: 20px;	
+	float: left;
+}
+
+.footer .container .img_yogykarta{
+	height: 30px;
+	width: 30px;
+}
+
+.footer .container .nav{
+	padding: 0;
+	text-align: center;
+}
+
+.footer .container .nav h4{
+	font-size: 20px;
+}
+
+.footer .container .nav li{
+	font-size: 15px;
+	line-height: 30px;
+	list-style: none;
+	padding: 0; margin: 0;
+	text-align: center;
+}
+.nav_social{
+	left: 35%;
+	margin: 20px 0;	
+}
+.nav_social a{
+	margin: 0;
+}
+.nav_social a:last-child{
+	margin-right: 0;
+}
+
+.footer .row .col-6{
+	width: 50%;
+	float: left;
+}
+
+.back_to_top{
+	text-align: center;
+	color: #FCFCFC;
+	font-size: 15px;
+}
+
+.footer .copyright .mag_right{
+	display: block;
+	color: #FFF;
+	font-family: 'Raleway';
+	font-size: 15px;
+	margin: 10px 0 70px 0;
+}
+
+.copyright{
+	position: relative;
+	text-align: center;
+}
+}
+/*media queries for phones and portrait tablets end*/
+
+
+
+
+
+
+

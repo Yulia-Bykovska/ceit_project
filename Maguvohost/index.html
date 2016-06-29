@@ -8,9 +8,14 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <link rel="apple-touch-icon" sizes="57x57" href="Favincon/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="Favincon/favicons/apple-touch-icon-60x60.png">
@@ -34,20 +39,28 @@
 
 </head>
 <body>
-	<div class="header">
+	<div class="header navbar">
 		<div class="container">
-			<a href="#" class="logotype">
+			<div class="navbar-header">
+			 <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle icon hamburger">
+			 <span class="sr-only">Toggle navigation</span>
+        	<span class="icon-bar"></span>
+       	 <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+			<a href="#" class="logotype navbar-brand">
 				<span class="logo_img"></span>
 				<span class="logo">Maguwo<b>Host</b></span>
 			</a>	
-
-			 <ul class="nav">
+		 <div class="navbar-collapse collapse">	
+			 <ul class="nav navbar-nav">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Pricing</a></li>
 				<li><a href="#">Domain</a></li>
 				<li><a href="#">Hosting</a></li>
 			</ul>
+		
 			<div class="contact">
 					<p class="contact_help">Do you need help ? Just Email, Live chat or Call us</p>
 				<div class="btn-number">
@@ -60,10 +73,12 @@
 				</div>
 			</div>
 		</div>
+		</div>
+		</div>
 	</div>
 
-	<div class="screen __main_login col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="screen __main_login">
+		<div class="container">
 		<div class="main-login-contain">
 			<h1 class="main_name">Just a Proffesional Web Hosting Services</h1>
 			<p>modern  -  fast  -  reliable</p>
@@ -84,15 +99,15 @@
 					</form>
 				</div>
 			</div>
-		</div>
+		</div> 
 		</div>
 	<div class="dimming"></div>	
 	</div>
 
-	<div class="screen_servises col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div class="col-1 web col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="screen_servises">
+		<div class="container">
+			<div class="row">
+				<div class="col-1 web col-xs-12 col-sm-6">
 					<span class="icon _webhost">
 					</span>
 					<h3>#1 Webhost Services</h3>
@@ -101,7 +116,7 @@
 					</p>
 					<div class="serises_btn">More</div>
 				</div>
-				<div class="col-2 dom col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-2 dom col-xs-12 col-sm-6">
 					<span class="icon _domain">
 					.com
 					</span>
@@ -113,18 +128,18 @@
 			</div>
 		</div>
 
-		<div class="screen-webhost bouth col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="screen-webhost bouth">
 		</div>
-		<div class="screen-domain bouth col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="screen-domain bouth">
 		</div>
 	</div>
 
-	<div class="features col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="features">
 		<div class="container">
 			<h2 class="features_name"><b>Our features</b></h2>
 			<p class="features_text">Our best features</p>
 		<div class="row wrap">
-			<div class="col-3 col-xs-6  col-sm-6 col-md-3 col-lg-3">
+			<div class="col-features col-xs-12 col-sm-6 col-md-3 col-lg-3">
 			<div class="col_img_border">
 				<span class="features_col_img-1"></span>
 			</div>
@@ -132,7 +147,7 @@
 				<p class="features_col_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor.</p>
 			</div>
-			<div class="col-3 col-xs-6 col-sm-6 col-md-3 col-lg-3">
+			<div class="col-features col-xs-12 col-sm-6 col-md-3 col-lg-3">
 			<div class="col_img_border">
 				<span class="features_col_img-2"></span>
 			</div>	
@@ -141,7 +156,7 @@
 				tempor.</p>
 			
 			</div>
-			<div class="col-3 col-xs-6 col-sm-6 col-md-3 col-lg-3">
+			<div class="col-features col-xs-12 col-sm-6 col-md-3 col-lg-3">
 			<div class="col_img_border">
 				<span class="features_col_img-3"></span>
 			</div>
@@ -149,7 +164,7 @@
 				<p class="features_col_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor.</p>
 						</div>
-			<div class="col-3 col-xs-6 col-sm-6 col-md-3 col-lg-3">
+			<div class="col-features col-xs-12 col-sm-6 col-md-3 col-lg-3">
 			<div class="col_img_border">
 				<span class="features_col_img-4"></span>
 			</div>
@@ -161,25 +176,25 @@
 		</div>
 	</div>
 
-	<div class="screen_logos col-xs-12 col-sm-12 col-md-12 col-lg-12">
-	<div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="screen_logos">
+	<div class="container">
 		<diw class="row wraper">
-			<div class="col-4 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<div class="col-clients col-xs-12 col-md-4 col-lg-4">
 				<h3 class="screen_logos_clients_title">Our clients</h3>
 				<p class="screen_logos_clients_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
-		<div class="col-8 col-xs-12 col-sm-8 col-md-8 col-lg-8">
-			<div class="col-2 col-xs-12 col-sm-3 col-md-2 col-lg-2">
+		<div class="col-logos col-xs-12 col-sm-12 col-md-8 col-lg-8">
+			<div class="col-logo-img col-xs-12 col-sm-3 col-md-2 col-lg-2">
 				<a href="#" class="screen_logos_names_tree"><img src="img/tree-logo.jpg"></a>
 			</div>
-			<div class="col-2 col-xs-12 col-sm-3 col-md-2 col-lg-2">
+			<div class="col-logo-img col-xs-12 col-sm-3 col-md-2 col-lg-2">
 				<a href="#" class="screen_logos_names_x-logo"><img src="img/x-logo.jpg"></a>
 			</div>
-			<div class="col-2 col-xs-12 col-sm-3 col-md-2 col-lg-2">
+			<div class="col-logo-img col-xs-12 col-sm-3 col-md-2 col-lg-2">
 				<a href="#" class="screen_logos_names_u-logo"><img src="img/u-logo.jpg"></a>
 			</div>
-			<div class="col-2 col-xs-12 col-sm-3 col-md-2 col-lg-2">
+			<div class="col-logo-img col-xs-12 col-sm-3 col-md-2 col-lg-2">
 				<a href="#" class="screen_logos_names_fish-logo"><img src="img/fish-logo.jpg"></a>
 			</div>
 		</div>	
@@ -187,10 +202,10 @@
 	</div>
 	</div>
 
-	<div class="screen_testimonials col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="screen_testimonials">
+		<div class="container">
 			<div class="row wraper">
-				<div class="col-4 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="col-comment col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="testimonials_text">
 						<p class="comment">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua."</p>
@@ -198,7 +213,7 @@
 						<div class="testimonials_client_picture"><img src="img/testimonial_client_1.png"></div>
 					</div>
 				</div>
-				<div class="col-4 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="col-comment col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="testimonials_text">
 						<p class="comment">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua."</p>
@@ -206,7 +221,7 @@
 						<div class="testimonials_client_picture"><img src="img/testimonial_client_1.png"></div>
 					</div>
 				</div>
-				<div class="col-4 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="col-comment col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="testimonials_text">
 						<p class="comment">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua."</p>
@@ -218,21 +233,21 @@
 		</div>
 	</div>
 
-	<div class="pricing col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="pricing">
 		<div class="container">
-			<div class="col-8 pricing_plans col-xs-12 col-sm-8 col-md-8 col-lg-8">
+			<div class="col-price-text pricing_plans col-xs-12 col-sm-8 col-md-8 col-lg-8">
 			<h3 class="pricing_title">Do you want to view Plans & Pricing?</h3>
 			<p class="pricing_text">Follow the button in the right section.</p>
 			</div>
-			<div class="col-4 pricing_btn"><a class="btn_pricing_plans" href="#">Plans & Pricing</a>
+			<div class="col-price-btn pricing_btn"><a class="btn_pricing_plans" href="#">Plans & Pricing</a>
 			</div>
 		</div>
 	</div>
 
 	<div class="footer">
-		<div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="container">
 		<div class="row">
-			<div class="col-9 col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			<div class="col-map col-xs-12 col-sm-9 col-md-9 col-lg-9">
 			<div class="container">
 				<div class="footer_map"></div>
 				<span class="point_yogykarta">
@@ -243,7 +258,7 @@
 				</div>
 			</div>	
 			</div>
-			<div class="nav col-3 col-xs-4 col-sm-3 col-md-3 col-lg-3">
+			<div class="nav col-foo-menu col-xs-12 col-sm-12 col-md-3 col-lg-3">
 				<h4>Navigation</h4>
 				<ul>
 					<li><a href="#">Home</a></li>
@@ -253,17 +268,17 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 				
-				<div class="nav_social">
-					<a href="#" class="twitter col-xs-2"><span class="icontwitter"></span></a>
-					<a href="#" class="instagram col-xs-2"><img src="img/instagram.png"></a>
-					<a href="#" class="google col-xs-2"><img src="img/google.png"></a>
+				<div class="nav_social col-xs-12">
+					<a href="#" class="twitter col-xs-1"><img src="img/twitter.png"></a>
+					<a href="#" class="instagram col-xs-1"><img src="img/instagram.png"></a>
+					<a href="#" class="google col-xs-1"><img src="img/google.png"></a>
 				</div>
 				<a href="#" class="back_to_top">Back To Top</a>	
 			</div>
 			
 			</div>
 		<div class="row">	
-			<div class="copyright col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-copyright">
 				<img class="mag_img" src="img/footer_star.png">
 				<small class="mag_right">Copyright 2014 Maguwohost by FikriStudio</small>
 			</div>
