@@ -1,0 +1,142 @@
+.screen-header{
+	margin: 0;
+	width: 100%;
+	position: relative;
+	.cover{
+		background: url("../images/photo-cover.png") no-repeat;
+		background-size: cover;
+		width: auto;
+		min-height: 500px;
+		max-height: 900px;
+		height: 100vh;
+		}
+		.container{
+			margin: 0 auto;
+			position: relative;
+			z-index: 2;
+			height: ~"calc( 100vh - 150px )";
+			.header{
+				position: relative;
+				top: 0;
+				left: 0;
+				z-index: 2;
+				font-family: "Raleway";
+				font-weight: 500;
+
+				.navbar-toggle{
+					margin: 70px 50px 0 0;
+					background-color: @color-light;
+    				border: 1px solid @base-color;
+
+    					.icon-bar{
+    					display: block;
+						width: 22px;
+						height: 2px;
+						border-radius: 1px;
+						background: @base-color;
+    					}
+				}
+
+				.navbar-brand{
+					color: @color-light;
+					float: left;
+					margin: 50px 100px;
+					@media(max-width:1200px){
+						margin: 50px 40px 50px 0;	
+					}	
+
+					&:hover{
+						color: @color-light;
+					}
+
+					.logo-img{
+						background: url("../images/logos.png") no-repeat;
+						background-size: cover;
+						display: inline-block;
+						width: 60px;
+						height: 50px;
+						
+					}
+					.logo-name{
+						font-size: 40px;
+						line-height: 40px;
+					}
+					&:hover{
+						color: @color-light;
+					}
+				}
+				.navbar-nav{
+					margin: 70px 50px 50px 200px;
+					font-size: 17px;
+					line-height: 17px;
+					@media(max-width:1200px){
+						margin: 70px 0px 50px 5%;
+					}
+				}
+				.navbar-nav a{
+					color: @color-light;
+					padding: 5px;
+					margin-right: 15px;
+
+					&:hover{
+						background: none;
+						color: @base-color;
+					}
+				}
+			}
+			.screen-slide{
+				margin: 0;
+				position: relative;
+				height: auto;
+
+
+				.head-content{
+					color: @color-light;
+					text-align: center;
+					left: 0;
+					right: 0;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+				}	
+					.small-title{
+						font-size: 30px;
+						line-height: 30px;
+						margin: 0 0 20px 0;
+					}
+					.main-title{
+						font-size: 50px;
+						line-height: 50px;
+						font-weight: 700;
+						margin: 0 0 30px 0;
+					}
+					.title-text{
+						font-size: 17px;
+						line-height: 25px;
+						margin: 0 15% 20px 15%;
+					}
+					.btn{
+						background: @base-color;
+						color: @color-light;
+						padding: 10px 20px;
+						font-weight: bold;
+						text-transform: uppercase;
+
+					&:hover{
+						color: #998675;
+						background: @color-light;
+					}
+					}
+			}
+			
+		}	
+	.dimming{
+		position: absolute;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}

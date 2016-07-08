@@ -1,0 +1,80 @@
+.screen_realization{
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-color: #FBFAF8;
+
+		.container{
+			padding: 100px 0 0 0;
+			position: relative;
+
+			.realization-text{
+				text-align: center;
+				color: @base-color-dark;
+				.realiz-title{
+					color: @base-color-dark;
+					font-size: 30px;
+					line-height: 30px;
+					margin-bottom: 20px;
+				}
+				.realiz-text{
+					font-size: 15px;
+					line-height: 25px;
+					margin: 0 15% 30px 15%;
+					color: @base-color;
+				}
+			}
+			.realization-slides{
+				position: relative;
+
+					.img-1{
+						position: relative;
+						z-index: 3;
+						left: 50%;
+						transform:translateX(-50%);
+						@media(max-width:1200px){
+							width: 90%;
+						}
+						@media(max-width:992px){
+							top: 0px;
+						}
+						@media(max-width:767px){
+							top: 18px;
+						}
+
+					}
+					.img-2{
+						position: absolute;
+						z-index: 1;
+						top: 82px;
+						left: 0;
+						@media(max-width:1200px){
+							width: 90%;
+							top: 92px;
+						}
+						@media(max-width:992px){
+							top: 72px;
+						}
+						@media(max-width:767px){
+							top: 80px;
+						}
+					}
+					.img-3{
+						position: absolute;
+						z-index: 2;
+						top: 82px;
+						right: 0;
+						@media(max-width:1200px){
+							width: 90%;
+							top: 92px;
+						}
+						@media(max-width:992px){
+							top: 72px;
+						}
+						@media(max-width:767px){
+							top: 80px;
+						}
+					}
+			}
+		}
+}

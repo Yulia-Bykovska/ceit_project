@@ -1,0 +1,52 @@
+.screen_pricing{
+	position: relative;
+	background: darken(@base-color, 40%);
+
+	.container{
+		.row{
+			margin: 20px 0;
+
+			.price{
+				@media(max-width:767px){
+					text-align: center;
+					margin: 30px 0;
+				}
+
+				.pricing-title{
+					color: @color-light;
+
+					span{
+						color: @base-color;
+					}
+				}
+				.pricing-text{
+					color: @base-color-dark;
+					font-size: 15px;
+					line-height: 20px;
+					margin-top: 5px;
+				}
+			}
+			.pricing-btn{
+				position: relative;
+				text-align: center;
+
+				.btn-default{
+					margin-top: 20px;
+					border-radius: 2px;
+					background: @base-color;
+					color: @color-light;
+					border: none;
+					font-size: 14px;
+					padding: 10px 20px;
+					font-weight: bold;
+					text-transform: uppercase;
+
+					&:hover{
+						background: @color-light;
+						color: @base-color;
+					}
+				}
+			}
+		}
+	}
+}
