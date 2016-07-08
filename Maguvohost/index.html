@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>Юлія Биковська</title>
+	<meta name="viewport" content="width=devise-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,900,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
@@ -9,10 +10,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -42,11 +43,10 @@
 	<div class="header navbar">
 		<div class="container">
 			<div class="navbar-header">
-			 <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle icon hamburger">
-			 <span class="sr-only">Toggle navigation</span>
+			 <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">	
         	<span class="icon-bar"></span>
-       	 <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+       		<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
       </button>
 			<a href="#" class="logotype navbar-brand">
 				<span class="logo_img"></span>
@@ -54,7 +54,7 @@
 			</a>	
 		 <div class="navbar-collapse collapse">	
 			 <ul class="nav navbar-nav">
-				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Pricing</a></li>
 				<li><a href="#">Domain</a></li>
@@ -83,22 +83,23 @@
 			<h1 class="main_name">Just a Proffesional Web Hosting Services</h1>
 			<p>modern  -  fast  -  reliable</p>
 			<span class="screen1-shape"></span>
-			<div>
-				<div class="check_domain">
-					<form>
+					
+				<form role="form" class = "form-inline check_domain">
+					<div class="form-group">
 						<input type="text" name="domain_name" placeholder="Your Domain Name..." id="domain_name">
-						
+					</div>	
+					<div class="form-group">
 					<div class="select_wrap">
 						<select class="select_domain_name">
 							<option>.com</option>
 							<option>.ua</option>
 						</select>
-						
+					</div>	
 					</div>
+					<div class="form-group">
 						<input type="submit" name="check_availability" value="Check Availability" id="check_availability">
-					</form>
-				</div>
-			</div>
+					</div>	
+				</form>
 		</div> 
 		</div>
 	<div class="dimming"></div>	
@@ -107,7 +108,7 @@
 	<div class="screen_servises">
 		<div class="container">
 			<div class="row">
-				<div class="col-1 web col-xs-12 col-sm-6">
+				<div class="web col-sm-12 col-md-12">
 					<span class="icon _webhost">
 					</span>
 					<h3>#1 Webhost Services</h3>
@@ -116,7 +117,7 @@
 					</p>
 					<div class="serises_btn">More</div>
 				</div>
-				<div class="col-2 dom col-xs-12 col-sm-6">
+				<div class="dom col-sm-12 col-md-12">
 					<span class="icon _domain">
 					.com
 					</span>
@@ -139,7 +140,7 @@
 			<h2 class="features_name"><b>Our features</b></h2>
 			<p class="features_text">Our best features</p>
 		<div class="row wrap">
-			<div class="col-features col-xs-12 col-sm-6 col-md-3 col-lg-3">
+			<div class="col-features col-sm-6 col-md-3 col-lg-3">
 			<div class="col_img_border">
 				<span class="features_col_img-1"></span>
 			</div>
@@ -147,7 +148,7 @@
 				<p class="features_col_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor.</p>
 			</div>
-			<div class="col-features col-xs-12 col-sm-6 col-md-3 col-lg-3">
+			<div class="col-features col-sm-6 col-md-3 col-lg-3">
 			<div class="col_img_border">
 				<span class="features_col_img-2"></span>
 			</div>	
@@ -156,7 +157,7 @@
 				tempor.</p>
 			
 			</div>
-			<div class="col-features col-xs-12 col-sm-6 col-md-3 col-lg-3">
+			<div class="col-features col-sm-6 col-md-3 col-lg-3">
 			<div class="col_img_border">
 				<span class="features_col_img-3"></span>
 			</div>
@@ -164,7 +165,7 @@
 				<p class="features_col_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor.</p>
 						</div>
-			<div class="col-features col-xs-12 col-sm-6 col-md-3 col-lg-3">
+			<div class="col-features col-sm-6 col-md-3 col-lg-3">
 			<div class="col_img_border">
 				<span class="features_col_img-4"></span>
 			</div>
@@ -179,22 +180,22 @@
 	<div class="screen_logos">
 	<div class="container">
 		<diw class="row wraper">
-			<div class="col-clients col-xs-12 col-md-4 col-lg-4">
+			<div class="col-clients col-sm-12 col-md-4 col-lg-4">
 				<h3 class="screen_logos_clients_title">Our clients</h3>
 				<p class="screen_logos_clients_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 		<div class="col-logos col-xs-12 col-sm-12 col-md-8 col-lg-8">
-			<div class="col-logo-img col-xs-12 col-sm-3 col-md-2 col-lg-2">
+			<div class="col-logo-img col-xs-6 col-sm-3 col-md-3 col-lg-3">
 				<a href="#" class="screen_logos_names_tree"><img src="img/tree-logo.jpg"></a>
 			</div>
-			<div class="col-logo-img col-xs-12 col-sm-3 col-md-2 col-lg-2">
+			<div class="col-logo-img col-xs-6 col-sm-3 col-md-3 col-lg-3">
 				<a href="#" class="screen_logos_names_x-logo"><img src="img/x-logo.jpg"></a>
 			</div>
-			<div class="col-logo-img col-xs-12 col-sm-3 col-md-2 col-lg-2">
+			<div class="col-logo-img col-xs-6 col-sm-3 col-md-3 col-lg-3">
 				<a href="#" class="screen_logos_names_u-logo"><img src="img/u-logo.jpg"></a>
 			</div>
-			<div class="col-logo-img col-xs-12 col-sm-3 col-md-2 col-lg-2">
+			<div class="col-logo-img col-xs-6 col-sm-3 col-md-3 col-lg-3">
 				<a href="#" class="screen_logos_names_fish-logo"><img src="img/fish-logo.jpg"></a>
 			</div>
 		</div>	
@@ -235,7 +236,7 @@
 
 	<div class="pricing">
 		<div class="container">
-			<div class="col-price-text pricing_plans col-xs-12 col-sm-8 col-md-8 col-lg-8">
+			<div class="col-price-text pricing_plans col-xs-12 col-sm-12 col-md-8 col-lg-8">
 			<h3 class="pricing_title">Do you want to view Plans & Pricing?</h3>
 			<p class="pricing_text">Follow the button in the right section.</p>
 			</div>

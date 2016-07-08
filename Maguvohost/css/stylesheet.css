@@ -92,11 +92,6 @@ body{
 	margin: 0;
 } 
 
-.container{
-	margin: 0 auto;
-	width: 1170px;
-}
-
 .contact_help:after,
 .container:after{
 	content: '';
@@ -307,7 +302,8 @@ body{
 }
 
 .container .screen1-shape{
-	display: inline-block;
+	display: block;
+	margin: 0 auto;
 	background: url("../img/Shape.png") no-repeat; 
 	height: 110px;
 	width: 110px;
@@ -321,31 +317,19 @@ body{
 	display: inline-block;
 	content-align: center;
 	border: 17px solid rgba(255,255,255,.5);
-}
-
-.container .check_domain form{
 	font-family: "Raleway";
-	height: 60px;
-	line-height: 0;
-	font-size: 0;
-	width: 550px;
-	display: block;
+	width: auto;
 }
 
-.check_domain form #domain_name{
-	padding-left: 35px; 
+.container .check_domain input{
+	height: auto;
+	padding: 20px 35px 20px 35px; 
 	border: 0;
-	width: 270px;
 	float: left;
 	font-size: 20px;
-	font-weight: 200px;
-}
-
-.container .check_domain form input{
-	height: 60px;
+	line-height: 20px;
 	border: 0;
 	float: left;
-	width: 100px;
 }
 
  .container .check_domain .select_wrap{
@@ -354,8 +338,8 @@ body{
  	float: left;
 }
 
-.container .check_domain form select{
-	height: 60px;
+.container .check_domain select{
+	height: 64px;
 	border: 0;
 	float: left;
 	width: 120px;
@@ -386,19 +370,17 @@ body{
 	z-index: 1;
 }
 
-.container .check_domain form #check_availability{
-	width: 160px;
+.container .check_domain #check_availability{
 	background: #FFE13E;
 	border-left: 1px solid white;
 	font-size: 15px;
 	color: #FFF7CC;
 	font-weight: bold;
-	padding: 0 10px 0 10px;
+	padding: 22px 10px 22px 10px;
 }
 
-.container .check_domain form #check_availability:hover{
+.container .check_domain #check_availability:hover{
 	cursor: pointer;
-	border: 2px solid white;
 	background: #FFF;
 	color: #FFE13E;
 	transition: all .8s ease;
@@ -411,7 +393,7 @@ body{
 	padding: 110px 0 110px 0;
 } 
 
- .screen_servises .col-1.web,  .col-2.dom{
+ .screen_servises .web, .dom{
 	padding: 0 70px 0 60px;
 }
 .row{
@@ -424,12 +406,12 @@ body{
 	clear: both;
 	display: block;
 }
-.row .col-1{
+.row .web{
  	width:50%;
  	float: left;
 }
 
-.row .col-2{
+.row .dom{
  	width:50%;
  	float: right;
 }
@@ -453,7 +435,7 @@ body{
 	font-weight: bold;
 }
 
-.screen_servises .col-1 h3, .col-2 h3{
+.screen_servises .dom h3, .web h3{
 	color: #FFF;
 	font-size: 35px;
 	line-height: 40px;
@@ -623,7 +605,6 @@ body{
 }
 
 .screen_logos .container .row.wraper .col-clients{
-	width: 33.33333333%;
 	float: left;
 }
 
@@ -648,7 +629,6 @@ body{
 
 .screen_logos .row .col-logo-img{
 	padding: 0;
-	width: 25%;
 	position: relative;
 	float: left;
 }
@@ -845,11 +825,11 @@ body{
 	color: #FFE13E;
 }
 .nav_social{
-	right: 0;
 	margin: 20px 0 50px 90px;
 }
 .nav_social a{
-	margin: 0 5px;
+	padding: 5px;
+	margin: 0 10px;
 }
 .nav_social a:last-child{
 	margin-right: 0;
@@ -891,3 +871,134 @@ body{
 
 
 
+@media(max-width: 767px){
+.navbar-collapse .collapse{
+	background: #71c46b;
+    text-align: center;
+    height: -webkit-calc(100vh - 70px);
+    height: -moz-calc(100vh - 70px);
+    height: calc(100vh - 70px);
+    padding-bottom: 20px;
+}
+
+.logotype {
+	margin-right: 10px;
+}
+.nav .navbar-nav {
+	display: block;
+}
+
+.navbar-toggle{
+	margin-top: 50px;
+	background-color: #FFF;
+	border: 1px solid #202342;
+}
+.navbar-toggle:hover{
+	border:1px solid #FFE13E;
+	background-color: #FFE13E;
+}
+.icon-bar{
+	background-color: #202342;
+}
+.navbar-collapse.in{
+	overflow-y: visible;
+}
+.header .nav{
+	width: 100%;
+	margin: 0px 0px 20px 0px;
+}
+.header .nav li{
+	float: none;
+	text-align: center;
+	display: block;
+}
+
+.nav .navbar-nav{
+	width: 100%;
+}
+.header .contact{
+	border: none;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+.header .ph_number .phone_number{
+	font-size: 20px;
+}
+
+.screen.__main_login .container .main-login-contain{
+	position: relative;
+	height: auto;
+}
+.screen.__main_login .container .main-login-contain{
+	top: 0;
+	transform: none;
+}
+
+.screen.__main_login .container{
+	height: auto;
+}
+.container .check_domain #check_availability{
+	font-size: 14px;
+	padding: 22px 25px 22px 25px;
+}
+.screen_servises.row{
+	margin: 0;
+}
+.row .web{
+ 	width:100%;
+}
+.row .dom{
+ 	width:100%;
+}
+.screen_servises .icon._domain{
+	font-size: 140px;
+}
+
+.screen_servises .bouth{
+	width:100%;
+	position: absolute;
+}
+.screen_servises .screen-webhost{
+	background: #FFE13E;
+	width: 100%;
+	height: auto;
+}
+.screen_servises .screen-domain{
+ 	background: #202242;
+ 	height: 50%;
+}
+.screen_logos .row .col-logo-img img{
+	padding: 10px;
+}
+.pricing .container{
+	text-align: center;
+}
+.footer .container .nav{
+ 	padding: 0;
+ 	text-align: center;
+ 	display: block;
+}
+.footer .footer_map{
+	height: 400px;
+}
+.map_pointer{
+	float: left;
+}
+.point_yogykarta{
+	right: 170px;
+	top: -110px;
+}
+.nav_social{
+	margin: 0;
+	width: auto;
+	margin: 20px 40%;
+}
+.back_to_top{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+
+}
