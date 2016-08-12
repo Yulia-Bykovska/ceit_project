@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Startup</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700,800&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/base.min.css">
+    <body id="top"></body>
+    <header class="header">
+      <div class="container">
+        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <div class="logo-wrap navbar-brand"><a href="#top" class="logo"><img src="images/logo.svg" class="logo-img"><span class="logo-name text-capitalize">Im Startup</span></a></div>
+        <div class="user-wrap"><a href="#" class="log-in">Login</a><a href="#" class="register">Register</a></div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav menu">
+            <li><a href="#about" class="menu-item">About</a></li>
+            <li><a href="#features" class="menu-item">Features</a></li>
+            <li><a href="#pricing" class="menu-item">Pricing</a></li>
+            <li><a href="#testimonials" class="menu-item">Testimonials</a></li>
+            <li><a href="#team" class="menu-item">Team</a></li>
+            <li><a href="#mobile" class="menu-item">Mobile</a></li>
+            <li><a href="#blog" class="menu-item">Blog</a></li>
+            <li><a href="#contact" class="menu-item">Contact</a></li>
+            <li><a href="#" class="menu-item icon search"></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="pop-up-log-in common"><span class="form-close"></span>
+      <form class="login-form">
+        <p class="login">Login</p>
+        <label for="email" class="label">*Email</label><br>
+        <input type="text" placeholder="Your email" class="inputs"><br>
+        <label for="pass" class="label">*Password</label><br>
+        <input type="password" placeholder="Your password" class="inputs"><br>
+        <label for="pass" class="label">*Enter password again</label><br>
+        <input type="password" placeholder="Repeat password" class="inputs"><br>
+        <input type="submit" value="Login" class="btn login-btn">
+      </form>
+    </div>
+    <div class="pop-up-register common"><span class="form-close"></span>
+      <form class="login-form">
+        <p class="login">Sign up</p>
+        <label for="email" class="label">*Email</label><br>
+        <input type="text" placeholder="Your email" class="inputs"><br>
+        <label for="pass" class="label">*Password</label><br>
+        <input type="password" placeholder="Your password" class="inputs"><br>
+        <input type="submit" value="Sigh up" class="btn login-btn">
+      </form><a href="#" class="forgot">Forgot password(</a>
+    </div>
+    <article class="section_slider">
+      <ul class="bxslider">
+        <li>
+          <video id="video" width="100%" height="90%" poster="images/blue.png" controls preload>
+            <source src="videos/video.mp4" type="video/mp4">
+          </video>
+        </li>
+        <li>
+          <video id="video" width="100%" height="90%" poster="images/blue.png" controls preload>
+            <source src="videos/video.mp4" type="video/mp4">
+          </video>
+        </li>
+      </ul>
+      <div class="container video-desc">
+        <div class="play-wrap"><span onclick="toggleControls()" class="play"></span></div>
+        <div class="slider-description">
+          <h1 class="slider-title">Welcome  to Im startup <br>Lounch your product now</h1>
+          <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitatio.</p><a class="btn slider-btn">Get started</a>
+        </div>
+      </div>
+    </article>
+    <article class="brands_section">
+      <div class="container"><img src="images/brand-img-1.png" class="brand-item"><img src="images/brand-img-2.png" class="brand-item"><img src="images/brand-img-3.png" class="brand-item"><img src="images/brand-img-4.png" class="brand-item"><img src="images/brand-img-5.png" class="brand-item"><img src="images/brand-img-6.png" class="brand-item"><img src="images/brand-img-7.png" class="brand-item"></div>
+    </article>
+    <article class="features_section">
+      <div class="container">
+        <div class="desc">
+          <h2 class="title">Best features, best startup</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="feature-items clearfix">
+          <div class="feature-item col-md-4"><span class="item-img item-1"></span>
+            <h5 class="item-title">Startup feature</h5>
+            <p class="item-text">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <p class="item-text-show">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          </div>
+          <div class="feature-item col-md-4"><span class="item-img item-2"></span>
+            <h5 class="item-title">Startup feature</h5>
+            <p class="item-text">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <p class="item-text-show">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          </div>
+          <div class="feature-item col-md-4"><span class="item-img item-3"></span>
+            <h5 class="item-title">Startup feature</h5>
+            <p class="item-text">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <p class="item-text-show">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          </div>
+          <div class="btn-wrap col-md-12"><a class="learn-more">Learn more </a></div>
+        </div>
+      </div>
+    </article>
+    <article class="pricing_section">
+      <div class="container">
+        <div class="desc">
+          <h2 class="title">Startup price packages</h2>
+          <p class="text">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+        </div>
+        <div class="pricing-items clearfix">
+          <div class="pricing-item col-md-4">
+            <div class="pricing-item-name"><span class="price-title">Basic</span><span class="price-text">From <span>19$</span>per months</span></div>
+            <div class="pricing-condition"><span class="condition-true"></span>
+              <h5 class="condition-title">All elements</h5>
+              <p class="condition-terms">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="pricing-condition"><span class="condition-false"></span>
+              <h5 class="condition-title">Limitless variations</h5>
+              <p class="condition-terms">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="pricing-condition"><span class="condition-false"></span>
+              <h5 class="condition-title">Until die support</h5>
+              <p class="condition-terms">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="btn-buy-wrap"><a class="btn btn-buy">Buy now</a></div>
+          </div>
+          <div class="pricing-item col-md-4">
+            <div class="pricing-item-name"><span class="img-best"></span><span class="price-title">Premium</span><span class="price-text">From <span>59$ </span>per months</span></div>
+            <div class="pricing-condition"><span class="condition-true"></span>
+              <h5 class="condition-title">All elements</h5>
+              <p class="condition-terms">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="pricing-condition"><span class="condition-true"></span>
+              <h5 class="condition-title">Limitless variations</h5>
+              <p class="condition-terms">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="pricing-condition"><span class="condition-false"></span>
+              <h5 class="condition-title">Until die support</h5>
+              <p class="condition-terms">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="btn-buy-wrap"><a class="btn btn-buy">Buy now</a></div>
+          </div>
+          <div class="pricing-item col-md-4">
+            <div class="pricing-item-name"><span class="price-title">Gold</span><span class="price-text">From <span>99$ </span>per months</span></div>
+            <div class="pricing-condition"><span class="condition-true"></span>
+              <h5 class="condition-title">All elements</h5>
+              <p class="condition-terms">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="pricing-condition"><span class="condition-true"></span>
+              <h5 class="condition-title">Limitless variations</h5>
+              <p class="condition-terms">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="pricing-condition"><span class="condition-true"></span>
+              <h5 class="condition-title">Until die support</h5>
+              <p class="condition-terms">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="btn-buy-wrap"><a class="btn btn-buy">Buy now</a></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="subscribe_section">
+      <div class="container">
+        <div class="subscribe-description">
+          <h3 class="subsc-title">Start to use startup today!</h3>
+          <p class="subs-text">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+        </div>
+        <div class="wrap-subscribe">
+          <form class="form-subscribe">
+            <input type="email" placeholder="Your email adress" class="email">
+            <input type="submit" value="Subscribe" class="btn subs-btn">
+          </form>
+        </div>
+        <p class="guestion-text">Have a guestion? Give us a call - 90 555 4433.</p>
+      </div>
+    </article>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-title col-md-6"><span class="footer-img"></span>
+          <h6 class="footer text">Im startup</h6>
+        </div>
+        <div class="footer-social-copy col-md-6">
+          <div class="social"><a href="#" class="icon facebook"></a><a href="#" class="icon twitter"></a><a href="#" class="icon instagram"></a><a href="#" class="icon globe"></a></div>
+          <div class="copyright">
+            <p class="text-copy">&#169;2015 isamerican. Lth. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="scripts/base.min.js"></script>
+  </head>
+</html>
